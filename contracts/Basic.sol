@@ -2,11 +2,27 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test types.
+    function testTypes() public {
+        bool boolVal = true;
+        string memory stringVal = "Solidity";
+        address addressVal = address(0);
+        uint256 uint256Val = 1073741824;
+        emit printTypes(boolVal, stringVal, addressVal, uint256Val);
+    }
+
+    function testAddressType() public {
+        address sender = msg.sender;
+        address receiver = address(0x101);
+        emit printAddressType(sender, receiver);
+    }
+
+    event printTypes(bool _boolVal, string _stringVal, address _addressVal, uint256 _uint256Val);
+    event printAddressType(address _sender, address _receiver);
+
+    // Test comments.
     // This is a comment.
     /*
-     * This is also a comment. 
+     * This is also a comment.
      */
-    function getSum(uint _x, uint _y) public pure returns (uint) {
-        return _x + _y;
-    }
 }

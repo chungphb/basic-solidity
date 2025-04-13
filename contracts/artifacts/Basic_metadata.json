@@ -6,27 +6,67 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
 					},
 					{
-						"internalType": "uint256",
-						"name": "_y",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
 					}
 				],
-				"name": "getSum",
-				"outputs": [
+				"name": "printAddressType",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "_boolVal",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_stringVal",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_addressVal",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "_uint256Val",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "printTypes",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "testAddressType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testTypes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,11 +98,11 @@
 	},
 	"sources": {
 		"contracts/Basic.sol": {
-			"keccak256": "0x67c69432ce851be3b6f5a4a17f8639d7b37cd08ad55b55774ae332f1186a5b5e",
+			"keccak256": "0x5cc5940b48798fc1dd720d344a14777c3391655aa50e689ef2f3d24cb334cb0e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2491c099e1ff38de42a8c00bde6f435cbb983d5a54bd2eef8dc00b412d993fdf",
-				"dweb:/ipfs/QmbbxTafgtT72bjdjrdoom3C9ZhcGcmvdCnD79CnA1oGMZ"
+				"bzz-raw://ea47d69bdc3f660e03fe46e46122963093563fe52af7da38e1e7e3d8c747b945",
+				"dweb:/ipfs/QmbKFDbQEo5uEF6U6XNfW5YKWKwdEc6BPZXntM61xFbs2M"
 			]
 		}
 	},
