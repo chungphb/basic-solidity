@@ -3,6 +3,7 @@ pragma solidity ^0.8.26;
 
 contract Function {
     // Test cryptographic functions.
+    // E.g. Input 0x1234567890abcdef.
     function getKeccak256(bytes memory _bytes) public pure returns(bytes32 result) {
         return keccak256(_bytes);
     }
@@ -66,6 +67,10 @@ contract Function {
 }
 
 // Test fallback functions.
+// E.g.
+// 1. Deploy the Receiver contract.
+// 2. Use the address of the deployed Receiver contract as input
+//    to the `testFallback` function.
 contract Receiver {
     event Received(address sender, uint amount);
     event FallbackCalled(address sender, uint amount, bytes data);
