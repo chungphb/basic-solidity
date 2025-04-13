@@ -2,6 +2,29 @@
 pragma solidity ^0.8.26;
 
 contract Function {
+    /* Pure functions.
+     * - Ensure that they will not read or modify the state.
+     * - E.g. Not:
+     *      - Reading state variables.
+     *      - Accessing address(this).balance or <address>.balance.
+     *      - Accessing any of the special variable of block, tx, msg (msg.sig and msg.data can be read).
+     *      - Calling any function not marked pure.
+     *      - Using inline assembly that contains certain opcodes.
+     */
+    
+    /* View functions.
+     * - Ensure that they will not modify the state.
+     * - E.g. Not:
+     *      - Modifying state variables.
+     *      - Emitting events.
+     *      - Creating other contracts.
+     *      - Using selfdestruct.
+     *      - Sending Ether via calls.
+     *      - Calling any function which is not marked view or pure.
+     *      - Using low-level calls.
+     *      - Using inline Assembly containing certain opcodes.
+     */
+    
     // Test function modifiers.
 }
 
