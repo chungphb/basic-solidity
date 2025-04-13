@@ -6,71 +6,84 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_sender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_receiver",
-						"type": "address"
-					}
-				],
-				"name": "printAddressType",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "bool",
-						"name": "_boolVal",
-						"type": "bool"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "_stringVal",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_addressVal",
-						"type": "address"
-					},
-					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "_uint256Val",
+						"name": "_value",
 						"type": "uint256"
 					}
 				],
-				"name": "printTypes",
-				"type": "event"
+				"name": "addElementOfDynamicArray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "_var",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "printVariable",
-				"type": "event"
+				"name": "dynamicArr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getInternalStateVariable",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "fixedArr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getElementOfDynamicArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getElementOfFixedArray",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -83,7 +96,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "publicStateVar",
+				"name": "getLengthOfDynamicArray",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -96,54 +109,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "testAddressType",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "testGlobalVariable",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "testLocalVariable",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_var",
-						"type": "uint256"
-					}
-				],
-				"name": "testMultipleThings",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "testStateVariable",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "testTypes",
+				"name": "removeLastElementOfDynamicArray",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -162,7 +128,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basic.sol": "DerivedBasic"
+			"contracts/Basic.sol": "TestArray"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

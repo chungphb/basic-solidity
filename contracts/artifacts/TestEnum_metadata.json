@@ -6,13 +6,39 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "enum TestEnum.Pet",
+						"name": "_pet",
+						"type": "uint8"
+					}
+				],
+				"name": "adoptPet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getPublicStateVariable",
+				"name": "getDefaultPet",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "enum TestEnum.Pet",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPet",
+				"outputs": [
+					{
+						"internalType": "enum TestEnum.Pet",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -32,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basic.sol": "BasicCaller"
+			"contracts/Basic.sol": "TestEnum"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

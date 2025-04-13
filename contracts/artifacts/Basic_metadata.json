@@ -69,108 +69,6 @@
 				"type": "event"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "addElementOfDynamicArray",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "dynamicArr",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "fixedArr",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_index",
-						"type": "uint256"
-					}
-				],
-				"name": "getElementOfDynamicArray",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_index",
-						"type": "uint256"
-					}
-				],
-				"name": "getElementOfFixedArray",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getLengthOfDynamicArray",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "publicStateVar",
 				"outputs": [
@@ -181,13 +79,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "removeLastElementOfDynamicArray",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -273,11 +164,11 @@
 	},
 	"sources": {
 		"contracts/Basic.sol": {
-			"keccak256": "0x5e8f61bf24dc7d654dd5ce76f27961ce03e0d05a4ce5d7f6e54242147c3e0620",
+			"keccak256": "0xb6c85a4a41eb569e2579beac1794521ab12490398a3643417892b463b23026e9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f4c973d96b313b9c0fd067e38ee177e04a886e073e75563cb167cc18c98f6940",
-				"dweb:/ipfs/QmSy6fNfm3G8undPwZPbqM8ErvxsPysgFwC77UiyrvG7vo"
+				"bzz-raw://6e04c9fe19fa3c56cd7a8584acbef4b3933dace86959c769ac4eceabb86bfec3",
+				"dweb:/ipfs/QmPjVC7EMHbbnqXcZ9Tox3hkqppsRAquvexa4LNT4pDaHV"
 			]
 		}
 	},
