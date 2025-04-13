@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getPublicStateVariable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -16,6 +22,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_value",
+						"type": "uint8"
+					}
+				],
+				"name": "setBalanceOfAddressToValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basic.sol": "BasicCaller"
+			"contracts/Basic.sol": "TestMapping"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

@@ -166,3 +166,13 @@ contract TestStruct {
         return people.length;
     }
 }
+
+contract TestMapping {
+    mapping(address => uint256) public balance;
+        
+    function setBalanceOfAddressToValue(address _addr, uint8 _value) public {
+        require(_addr != address(0), "Invalid address");
+        require(_value >= 1 && _value <= 9, "Invalid value");
+        balance[_addr] = uint256(_value);
+    }
+}
