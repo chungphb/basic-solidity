@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getPublicStateVariable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Basic.sol": "BasicCaller"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Basic.sol": {
+			"keccak256": "0xf7856328e2eb0d76d62a6955bb4fbe9d565be2c84dd1e1602c303c6b9170acf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://43f1dcc3ccb63c9af5826d9dd376bdde1c6b814a7eeb3bdb42209eb78cec3693",
+				"dweb:/ipfs/QmX9S6uegGU2WRi3SYjNNozwsqcxxFw5ZPc5NGdWpx4hbx"
+			]
+		}
+	},
+	"version": 1
+}

@@ -70,6 +70,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getInternalStateVariable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "publicStateVar",
 				"outputs": [
 					{
@@ -130,7 +143,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basic.sol": "Basic"
+			"contracts/Basic.sol": "DerivedBasic"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

@@ -2,6 +2,10 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test variable scope.
+    uint public publicStateVar = 1073741824;
+    uint internal internalStateVar = 1073741824;
+
     // Test variables.
     uint stateVar; // State variable.
     function testStateVariable() public {
@@ -44,4 +48,17 @@ contract Basic {
     /*
      * This is also a comment.
      */
+}
+
+contract DerivedBasic is Basic {
+    function getInternalStateVariable() public view returns (uint) {
+        return internalStateVar;
+    }
+}
+
+contract BasicCaller {
+    Basic basic = new Basic();
+    function getPublicStateVariable() public view returns (uint) {
+        return basic.publicStateVar();
+    }
 }
