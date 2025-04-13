@@ -2,6 +2,22 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test time units.
+    function testTimeUnits() public pure {
+        assert(1 seconds == 1);
+        assert(1 minutes == 60 seconds);
+        assert(1 hours == 60 minutes);
+        assert(1 days == 24 hours);
+        assert(1 weeks == 7 days);
+    }
+
+    // Test ether units.
+    function testEtherUnits() public pure {
+        assert(1 wei == 1);
+        assert(1 gwei == 1e9);
+        assert(1 ether == 1e18);
+    }
+
     // Test operators, loops and decision making.
     function testMultipleThings(uint _var) public pure returns (string memory) {
         return convertIntegerToString(_var);

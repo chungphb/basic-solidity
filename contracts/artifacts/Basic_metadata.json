@@ -90,6 +90,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "testEtherUnits",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "testGlobalVariable",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -130,6 +137,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "testTimeUnits",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "testTypes",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -164,11 +178,11 @@
 	},
 	"sources": {
 		"contracts/Basic.sol": {
-			"keccak256": "0xc15eb1bd6113de823c2e25365fbe63834ae4bd0b3b3a29f536b825d0149df526",
+			"keccak256": "0xa46216deda28c98cabb93b276c46874513431b296675af5dd7ada2bbdcb0ec9a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a0ef056c40defdc478531400c78d17aefa4e7f4213c0268de6d465b4e5b69619",
-				"dweb:/ipfs/Qmb86g6PA3xfvZ5bvhf6UryuBJ1sNZDDXsgcz5Kay8fmo4"
+				"bzz-raw://6b5181717e042907779808297d494c210c1dcf5c1955a6f75617c70030c99c67",
+				"dweb:/ipfs/QmPSgeedyj8ws78CfTmeinvqoT7aaFWZ5LhkbM5HRo2q8N"
 			]
 		}
 	},
