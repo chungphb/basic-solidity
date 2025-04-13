@@ -2,6 +2,25 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test variables.
+    uint stateVar; // State variable.
+    function testStateVariable() public {
+        stateVar = 1073741824;
+        emit printVariable(stateVar);
+    }
+
+    function testLocalVariable() public {
+        uint localVar = 1073741824;
+        emit printVariable(localVar);
+    }
+
+    function testGlobalVariable() public {
+        uint globalVar = block.number;
+        emit printVariable(globalVar);
+    }
+
+    event printVariable(uint _var);
+
     // Test types.
     function testTypes() public {
         bool boolVal = true;
