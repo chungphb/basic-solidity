@@ -2,6 +2,33 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test array.
+    uint[3] public fixedArr = [1, 2, 3];
+
+    function getElementOfFixedArray(uint _index) public view returns (uint) {
+        require(_index < 3, "Index out of bounds");
+        return fixedArr[_index];
+    }
+    
+    uint[] public dynamicArr;
+
+    function addElementOfDynamicArray(uint _value) public {
+        dynamicArr.push(_value);
+    }
+
+    function removeLastElementOfDynamicArray() public {
+        dynamicArr.pop();
+    }
+
+    function getLengthOfDynamicArray() public view returns (uint) {
+        return dynamicArr.length;
+    }
+
+    function getElementOfDynamicArray(uint _index) public view returns (uint) {
+        require(_index < dynamicArr.length, "Index out of bounds");
+        return dynamicArr[_index];
+    }
+
     // Test operators, loops and decision making.
     function testMultipleThings(uint _var) public pure returns (string memory) {
         return convertIntegerToString(_var);
