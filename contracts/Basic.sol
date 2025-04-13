@@ -76,20 +76,20 @@ contract Basic {
     uint stateVar; // State variable.
     function testStateVariable() public {
         stateVar = 1073741824;
-        emit printVariable(stateVar);
+        emit PrintVariable(stateVar);
     }
 
     function testLocalVariable() public {
         uint localVar = 1073741824;
-        emit printVariable(localVar);
+        emit PrintVariable(localVar);
     }
 
     function testGlobalVariable() public {
         uint globalVar = block.number;
-        emit printVariable(globalVar);
+        emit PrintVariable(globalVar);
     }
 
-    event printVariable(uint _var);
+    event PrintVariable(uint _var);
 
     // Test types.
     function testTypes() public {
@@ -97,17 +97,17 @@ contract Basic {
         string memory stringVal = "Solidity";
         address addressVal = address(0);
         uint256 uint256Val = 1073741824;
-        emit printTypes(boolVal, stringVal, addressVal, uint256Val);
+        emit PrintTypes(boolVal, stringVal, addressVal, uint256Val);
     }
 
     function testAddressType() public {
         address sender = msg.sender;
         address receiver = address(0x101);
-        emit printAddressType(sender, receiver);
+        emit PrintAddressType(sender, receiver);
     }
 
-    event printTypes(bool _boolVal, string _stringVal, address _addressVal, uint256 _uint256Val);
-    event printAddressType(address _sender, address _receiver);
+    event PrintTypes(bool _boolVal, string _stringVal, address _addressVal, uint256 _uint256Val);
+    event PrintAddressType(address _sender, address _receiver);
 
     // Test comments.
     // This is a comment.

@@ -21,7 +21,7 @@
 						"type": "address"
 					}
 				],
-				"name": "printAddressType",
+				"name": "PrintAddressType",
 				"type": "event"
 			},
 			{
@@ -52,7 +52,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "printTypes",
+				"name": "PrintTypes",
 				"type": "event"
 			},
 			{
@@ -65,7 +65,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "printVariable",
+				"name": "PrintVariable",
 				"type": "event"
 			},
 			{
@@ -191,11 +191,11 @@
 	},
 	"sources": {
 		"contracts/Basic.sol": {
-			"keccak256": "0x9aab687e30f2ecad4af2de47ba39e62227222a9f31ae77bd2951f32e11f3ce11",
+			"keccak256": "0x61cb05c8039c14a92adf2ec6f61bfcd2d6d2859145de725df07f610cba44251d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://216a8ea74a54a9403fb8c829d6f7686fc91d2463d292133c2462165ff22eb13f",
-				"dweb:/ipfs/QmfM7a3jhrVm2zCY9YfYMxLZ7bWrgHFo8dFAMiPMnfXm1H"
+				"bzz-raw://1c97cb87e3807d7e2f6d385c446021ff73e682436b4342c13725286ac58f456c",
+				"dweb:/ipfs/QmYbWo2iD8kLNps5tMpFcrsdW9qXGtNn2oftMAokzmDKxJ"
 			]
 		}
 	},
