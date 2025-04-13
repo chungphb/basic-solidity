@@ -2,6 +2,34 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test operators, loops and decision making.
+    function testMultipleThings(uint _var) public pure returns (string memory) {
+        return convertIntegerToString(_var);
+    }
+
+    function convertIntegerToString(uint _var) private pure returns (string memory) {
+        if (_var == 0) {
+            return "0";
+        }
+        uint i = _var;
+        uint len = 0;
+        while (i != 0) {
+            len++;
+            i /= 10;
+        }
+        bytes memory buf = new bytes(len);
+        uint j = len - 1;
+        do {
+            buf[j] = bytes1(uint8(48 + _var % 10));
+            if (j == 0) {
+                break;
+            }
+            j--;
+            _var /= 10;
+        } while (j >= 0);
+        return string(buf);
+    }
+
     // Test variable scope.
     uint public publicStateVar = 1073741824;
     uint internal internalStateVar = 1073741824;
