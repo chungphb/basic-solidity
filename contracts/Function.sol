@@ -2,6 +2,12 @@
 pragma solidity ^0.8.26;
 
 contract Function {
+    // Test fallback functions.
+    function testFallback(Receiver receiver) public {
+        (bool success,) = address(receiver).call(abi.encodeWithSignature("nonExistingFunction()"));
+        require(success);
+    }
+
     /* Pure functions.
      * - Ensure that they will not read or modify the state.
      * - E.g. Not:
@@ -26,6 +32,28 @@ contract Function {
      */
     
     // Test function modifiers.
+}
+
+// Test fallback functions.
+contract Receiver {
+    event Received(address sender, uint amount);
+    event FallbackCalled(address sender, uint amount, bytes data);
+    
+    receive() external payable {
+        emit Received(msg.sender, msg.value);
+    }
+
+    fallback() external payable {
+        emit FallbackCalled(msg.sender, msg.value, msg.data);
+    }
+
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
+    }
+
+    function deposit() public payable {
+        require(msg.value > 0, "Must send some Ether");
+    }
 }
 
 // Test function modifiers.

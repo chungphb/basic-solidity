@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract Receiver",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "testFallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +47,11 @@
 	},
 	"sources": {
 		"contracts/Function.sol": {
-			"keccak256": "0x63791a71b3a2d71e0053e95f6fe57557bbb102e9f6eeb077cfb609d8b1c2b6cb",
+			"keccak256": "0xe5c42d99399cce4f0751b6a17850f9a4b20b70c3b6b639d42e44bfe775ce8cc7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e65f81912a6f6702fc44c175e76ace5c8f1e51329b625d0b7325159037b8975e",
-				"dweb:/ipfs/QmSPf17xwDQCfQyuAU9sKk7EtpfXHYZrEZmo6SbrBLvzsr"
+				"bzz-raw://445d33bf20cfcd05d922fcac67027791efa3b6bf92e1055d211927acc21a472a",
+				"dweb:/ipfs/QmQEWcoJkmfWWJx7CM5z6KGK7PQqcxTakZKMTVYxvvaarb"
 			]
 		}
 	},

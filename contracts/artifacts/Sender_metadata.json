@@ -8,31 +8,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_initialPrice",
-						"type": "uint256"
+						"internalType": "contract Receiver",
+						"name": "receiver",
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "register",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "send",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "_price",
-						"type": "uint256"
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
-				"name": "updatePrice",
-				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -50,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Function.sol": "Register"
+			"contracts/Function.sol": "Sender"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,11 +53,11 @@
 	},
 	"sources": {
 		"contracts/Function.sol": {
-			"keccak256": "0xe5c42d99399cce4f0751b6a17850f9a4b20b70c3b6b639d42e44bfe775ce8cc7",
+			"keccak256": "0x88934ab038069b235088a703466d242addf0ae7cf817712f4edc19aa249f7da7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://445d33bf20cfcd05d922fcac67027791efa3b6bf92e1055d211927acc21a472a",
-				"dweb:/ipfs/QmQEWcoJkmfWWJx7CM5z6KGK7PQqcxTakZKMTVYxvvaarb"
+				"bzz-raw://67a02ccaa66b5def0e537e61c82c0136f7b54064a2f31f82516d131b7c74e7d4",
+				"dweb:/ipfs/QmcqunG7f4gvYXFfD3xXMS46ybWTzTCvQbApuyou5nUGwy"
 			]
 		}
 	},
