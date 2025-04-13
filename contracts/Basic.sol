@@ -136,3 +136,33 @@ contract TestEnum {
         return defaultPet;
     }
 }
+
+contract TestStruct {
+    struct Person {
+        string name;
+        uint age;
+    }
+    Person[] people;
+
+    function addPerson(string memory _name, uint _age) public {
+        Person memory person = Person(_name, _age);
+        people.push(person);
+    }
+
+    function removePerson(uint index) public {
+        require(index < people.length, "Index out of bounds");
+        for (uint i = index; i < people.length; ++i) {
+            people[i] = people[i + 1];
+        }
+        people.pop();
+    }
+
+    function getPerson(uint index) public view returns (Person memory) {
+        require(index < people.length, "Index out of bounds");
+        return people[index];
+    }
+    
+    function getNumberOfPeople() public view returns (uint) {
+        return people.length;
+    }
+}
