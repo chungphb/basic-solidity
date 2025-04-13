@@ -2,6 +2,28 @@
 pragma solidity ^0.8.26;
 
 contract Function {
+    // Test cryptographic functions.
+    function getKeccak256(bytes memory _bytes) public pure returns(bytes32 result) {
+        return keccak256(_bytes);
+    }
+
+    function getRipemd160(bytes memory _bytes) public pure returns(bytes20 result) {
+        return ripemd160(_bytes);
+    }
+
+    function getSha256(bytes memory _bytes) public pure returns(bytes32 result) {
+        return sha256(_bytes);
+    }
+
+    // Test mathematical functions.
+    function getAddMod(uint x, uint y, uint k) public pure returns (uint) {
+        return addmod(x, y, k);
+    }
+
+    function getMulMod(uint x, uint y, uint k) public pure returns (uint) {
+        return mulmod(x, y, k);
+    }
+
     // Test function overloading.
     function sum(uint a, uint b) public pure returns (uint) {
         return a + b;
