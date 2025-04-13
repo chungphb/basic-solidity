@@ -2,6 +2,28 @@
 pragma solidity ^0.8.26;
 
 contract Basic {
+    // Test special variables and functions.
+    function testSpecialVariablesAndFunctions() internal view {
+        uint curBlockNumber = block.number;
+        bytes32 curBlockHash = blockhash(curBlockNumber);
+        uint curBlockBaseFee = block.basefee;
+        uint curBlockChainId = block.chainid;
+        address curBlockMinerAddress = block.coinbase;
+        uint curBlockDifficulty = block.difficulty;
+        uint curBlockGasLimit = block.gaslimit;
+        uint curBlockTimestampt = block.timestamp;
+        
+        uint256 gasLeft = gasleft();
+
+        bytes calldata msgData = msg.data;
+        address msgSender = msg.sender;
+        bytes4 msgSig = msg.sig;
+        uint msgValue = msg.value;
+        
+        uint txGasPrice = tx.gasprice;
+        address txOrigin = tx.origin;
+    }
+
     // Test time units.
     function testTimeUnits() public pure {
         assert(1 seconds == 1);
